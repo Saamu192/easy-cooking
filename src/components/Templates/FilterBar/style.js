@@ -6,17 +6,19 @@ export const FilterBarContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 10vh;
     width: 100%;
-    margin-top: 20px;
+
+    padding-left: 3vw;
+
+    background-color: ${props => props.theme.backgroundColorOne};
     
 
 .filterBar{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     border: none;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
 
 
 }
@@ -25,9 +27,9 @@ export const FilterBarContainer = styled.div`
     width: 100px;
     border: none;
     border-radius: 5px 0px 0px 5px;
-    background-color: #f6f4f6ff;
+    background-color: #f9f9f9;
 
-    
+    cursor: pointer;
 
 }
 .filterBar input{
@@ -42,8 +44,8 @@ export const FilterBarContainer = styled.div`
 .filterBar button{
 
     border: none;
-    background-color: red;
-    color: white;
+    background-color: ${(props) => props.theme.button.backgroundColor};
+    color: ${(props) => props.theme.colorTwo};
     height: 40px;
     width: 100px;
     border-radius: 0px 5px 5px 0px;

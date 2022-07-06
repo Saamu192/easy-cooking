@@ -8,11 +8,12 @@ export const FilterBar = () => {
     <FilterBarContainer>
       <div className="filterBar">
         <select name="filter" >
-        <option value="a">A</option>
-        <option value="b">B</option>
+          <option value="">--</option>
+          <option value="ingredientes">Ingredientes</option>
+          <option value="receitas">Receitas</option>
         </select>
 
-        <input type="text" placeholder="digitar"/>
+        <input type="text" placeholder="O que mata sua fome ?"/>
 
         <button>Pesquisar</button>
       </div>

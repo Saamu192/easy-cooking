@@ -1,5 +1,6 @@
 import {Header} from '../../components/Templates/Header/index.jsx';
 import {FilterBar} from '../../components/Templates/FilterBar/index.jsx';
+import { StyledBody } from './style.js';
 
 function Home () {
 
@@ -7,7 +8,11 @@ function Home () {
   return (
     <>
         <Header/>
-        <FilterBar/>
+        
+        <StyledBody>
+          <FilterBar/>
+
+        </StyledBody>
     </>
   )
 }
